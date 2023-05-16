@@ -1,0 +1,14 @@
+.img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	height: 360px;
+	width: 70%;
+	z-index: 1;
+	position: absolute;
+	top: -10%;
+	left: 15%;
+	border: 1px solid antiquewhite;
+	border-radius: 0.4%;
+}

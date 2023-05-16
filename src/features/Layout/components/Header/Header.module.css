@@ -1,0 +1,34 @@
+.headerWrapper {
+	height: 60px;
+	padding: 0 20px;
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: antiquewhite;
+	border-bottom: 1px solid antiquewhite;
+}
+.phoneContainer {
+	display: flex;
+	align-items: center;
+}
+.headerContact {
+	display: flex;
+	flex-direction: column;
+}
+.phoneSvg {
+	height: 36px;
+	width: 36px;
+	margin-right: 6px;
+}
+
+@media (max-width: 768px) {
+	.phoneSvg {
+		height: 34px;
+		width: 34px;
+	}
+	.headerContact {
+		font-size: 12px;
+		gap: 4px;
+	}
+}

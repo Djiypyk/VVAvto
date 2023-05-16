@@ -1,0 +1,8 @@
+.serviceBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 26px;
+    margin-bottom: 120px;
+}
