@@ -1,4 +1,4 @@
-import { ServiceBlock, SkillsItem, Slider } from './components'
+import { ServiceBlock, Slider } from './components'
 
 import Avto from './assets/img/avto.jpeg'
 import Avto1 from './assets/img/avto4.jpeg'
@@ -9,6 +9,7 @@ import Quality from './assets/svg/quality.svg'
 import Personal from './assets/svg/personal.svg'
 
 import styles from './Home.module.css'
+import { InfoItem } from '../../components'
 
 const skillsItem = [
 	{ title: 'Экономия времени', image: Time },
@@ -23,12 +24,15 @@ export const Home = () => {
 	return (
 		<div className={styles.mainWrapper}>
 			<div className={styles.mainGradient} />
-			<Slider images={images} />
+			<div className={styles.homeSlider}>
+				<Slider images={images} />
+			</div>
+
 			<div className={styles.mainContent}>
 				<h1>Автомастерская ВВ-Авто</h1>
 				<div className={styles.skillBlock}>
 					{skillsItem.map((item) => (
-						<SkillsItem title={item.title} image={item.image} />
+						<InfoItem key={item.title} title={item.title} image={item.image} />
 					))}
 				</div>
 				<h3>Предоставляем следующие услуги в нашей мастерской</h3>

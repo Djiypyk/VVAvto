@@ -1,13 +1,13 @@
 import { FC } from 'react'
 
-import styles from './SkillsItem.module.css'
+import styles from './InfoItem.module.css'
 
-interface ISkillsItemProps {
+interface IInfoItemProps {
 	title: string
 	image?: string
 }
 
-export const SkillsItem: FC<ISkillsItemProps> = ({ title, image }) => {
+export const InfoItem: FC<IInfoItemProps> = ({ title, image }) => {
 	return (
 		<div>
 			{image && (

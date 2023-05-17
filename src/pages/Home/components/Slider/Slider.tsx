@@ -1,5 +1,8 @@
 import { FC } from 'react'
-import { useSlider } from '../../hooks'
+import SwiperCore, { Autoplay, EffectCoverflow, Pagination } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
 import styles from './Slider.module.css'
 
 const windowWidth = window.innerWidth
@@ -9,18 +12,25 @@ interface ISliderProps {
 }
 
 export const Slider: FC<ISliderProps> = ({ images }) => {
-	const { itemNumber } = useSlider({
-		imageCount: images.length,
-	})
+	SwiperCore.use([EffectCoverflow, Pagination, Autoplay])
+
 	return (
-		<>
-			{windowWidth > 1078 && (
-				<img
-					className={styles.img}
-					src={images[itemNumber]}
-					alt='Слайдер с актуальной информацией'
-				/>
-			)}
-		</>
+		<Swiper
+			autoplay={{ delay: 3000 }}
+			effect={'coverflow'}
+			grabCursor={true}
+			centeredSlides={true}
+			slidesPerView={1}
+			pagination={true}
+			className='mySwiper'
+		>
+			{images.map((img, i) => {
+				return (
+					<SwiperSlide key={i}>
+						<img className={styles.img} src={img} alt='' />
+					</SwiperSlide>
+				)
+			})}
+		</Swiper>
 	)
 }
