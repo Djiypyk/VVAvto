@@ -15,3 +15,10 @@
     height: 400px;
     background-color: white;
 }
+
+@media (max-width: 768px){
+	.image{
+		width: 300px;
+		height: 270px;
+	}
+}
