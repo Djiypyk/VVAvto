@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom'
-// import { PATH } from '~/constants/path'
 import { PATH } from '../../../../constants/path'
 
 import styles from './HeaderMain.module.css'

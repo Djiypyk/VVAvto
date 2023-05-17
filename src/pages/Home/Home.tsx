@@ -1,4 +1,7 @@
-import { ServiceBlock, Slider } from './components'
+import { Map, Placemark } from '@pbe/react-yandex-maps'
+
+import { ServiceBlock } from './components'
+import { InfoItem, Slider } from '../../components'
 
 import Avto from './assets/img/avto.jpeg'
 import Avto1 from './assets/img/avto4.jpeg'
@@ -9,7 +12,8 @@ import Quality from './assets/svg/quality.svg'
 import Personal from './assets/svg/personal.svg'
 
 import styles from './Home.module.css'
-import { InfoItem } from '../../components'
+
+const windowWidth = window.innerWidth
 
 const skillsItem = [
 	{ title: 'Экономия времени', image: Time },
@@ -24,10 +28,11 @@ export const Home = () => {
 	return (
 		<div className={styles.mainWrapper}>
 			<div className={styles.mainGradient} />
-			<div className={styles.homeSlider}>
-				<Slider images={images} />
-			</div>
-
+			{windowWidth >= 1078 && (
+				<div className={styles.homeSlider}>
+					<Slider images={images} />
+				</div>
+			)}
 			<div className={styles.mainContent}>
 				<h1>Автомастерская ВВ-Авто</h1>
 				<div className={styles.skillBlock}>
@@ -46,7 +51,15 @@ export const Home = () => {
 							<span>ул. Ленина 213, г.Речица</span>
 						</div>
 
-						<div className={styles.map}></div>
+						<div className={styles.map}>
+							<Map
+								width={'100%'}
+								height={'100%'}
+								defaultState={{ center: [52.351703, 30.40508], zoom: 18 }}
+							>
+								<Placemark geometry={[52.351703, 30.40508]} />
+							</Map>
+						</div>
 						<div className={styles.mapBottonContent}>
 							<div className={styles.mapContact}>
 								<span className={styles.contactTitle}>Телефон: </span>

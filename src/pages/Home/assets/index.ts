@@ -1,0 +1,7 @@
+export * as Avto from './img/avto.jpeg'
+export * as Avto1 from './img/avto4.jpeg'
+export * as Avto2 from './img/avto5.jpeg'
+export * as Wallet from './svg/wallet.svg'
+export * as Time from './svg/time.svg'
+export * as Quality from './svg/quality.svg'
+export * as Personal from './svg/personal.svg'
