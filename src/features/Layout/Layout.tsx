@@ -1,16 +1,20 @@
 import { Outlet } from 'react-router-dom'
-import { Header, HeaderMain } from './components'
+import { Footer, Header, HeaderMain } from './components'
 import styles from './Layout.module.css'
 
 export const Layout = () => {
 	return (
-		<div className={styles.wrapper}>
-			<Header/>
-            <HeaderMain/>
-			<div className={styles.mainGradient} />
-			<main className={styles.content}>
-				<Outlet />
-			</main>
-		</div>
+		<>
+			<div className={styles.wrapper}>
+				<Header />
+				<HeaderMain />
+				<div className={styles.mainGradient} />
+				<main className={styles.content}>
+					<Outlet />
+				</main>
+				{/* <Footer /> */}
+			</div>
+			
+		</>
 	)
 }

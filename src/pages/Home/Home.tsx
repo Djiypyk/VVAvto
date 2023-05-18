@@ -1,13 +1,12 @@
-import { Contact, ServiceBlock } from './components'
-import { InfoItem, Slider } from '../../components'
-
-
-import Wallet from './assets/svg/wallet.svg'
-import Time from './assets/svg/time.svg'
-import Quality from './assets/svg/quality.svg'
-import Personal from './assets/svg/personal.svg'
-
+import { Contact } from './components'
 import styles from './Home.module.css'
+
+import { ServiceBlock } from '../components'
+import Wallet from '../assets/svg/wallet.svg'
+import Time from '../assets/svg/time.svg'
+import Quality from '../assets/svg/quality.svg'
+import Personal from '../assets/svg/personal.svg'
+import { InfoItem } from '../../components'
 
 const skillsItem = [
 	{ title: 'Экономия времени', image: Time },
@@ -17,12 +16,8 @@ const skillsItem = [
 ]
 
 export const Home = () => {
-	
-
 	return (
 		<div className={styles.mainWrapper}>
-			
-
 			<div className={styles.mainContent}>
 				<h1>Автомастерская ВВ-Авто</h1>
 				<div className={styles.skillBlock}>
