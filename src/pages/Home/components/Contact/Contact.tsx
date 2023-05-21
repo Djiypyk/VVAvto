@@ -15,17 +15,17 @@ export const Contact = () => {
 					<div className={styles.contactInfoEach}>
 						<p>Телефон: </p>
 						<div>
-							<p>8 029 694-16-03</p>
-							<p>8 029 663-24-28</p>
+							<a href='callto:+375296941603'>+375 (29) 694-16-03</a>
+							<a href='callto:+375296632428'>+375 (29) 694-16-03</a>
 						</div>
 					</div>
-                    
+
 					<div className={styles.contactInfoEach}>
 						<p>Часы работы: </p>
 						<div>
 							<p>С 08:00 до 18:00</p>
 							<p>Суббота с 08:00 до 12:00</p>
-							<p>Воскресенье выходной</p>
+							<p>Воскресенье: выходной</p>
 						</div>
 					</div>
 				</div>

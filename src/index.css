@@ -23,6 +23,7 @@
 html {
 	overflow: scroll;
 	overflow-x: hidden;
+	scrollbar-width: none;
 }
 ::-webkit-scrollbar {
 	width: 0px;
@@ -33,13 +34,14 @@ html {
 	background: #ff0000;
 }
 
+
 /* Links */
 a,
 a:link,
 a:visited {
-	/* color: inherit; */
+
 	text-decoration: none;
-	/* display: inline-block; */
+	display: inline-block;
 }
 
 a:hover {

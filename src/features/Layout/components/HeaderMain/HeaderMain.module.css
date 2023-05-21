@@ -1,26 +1,29 @@
 .headerMain {
 	height: 50%;
 	width: 100%;
-	background: top/ contain no-repeat url('../../../../assets/img/avto7.png')
+	background: top / cover no-repeat url('../../../../assets/img/avto7.png')
 		black;
-	background-size: 100%;
+	background-size: 65%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding-top: 60px;
 }
 .navBlock {
-	width: 90%;
-	height: 60px;
+	width: 90%;	
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding: 0 10px;
+	padding: 10px 0px;
 	border: 1px solid antiquewhite;
 	background-color: black;
 }
 .link {
+	padding: 10px 0;
 	color: antiquewhite;
+}
+.link:hover {
+	color: gold;
 }
 .activeLink {
 	color: cadetblue;
@@ -41,5 +44,20 @@
 	}
 	.homeSlider {
 		display: none;
+	}
+}
+@media (max-width: 756px) {
+	.headerMain {
+		background-size: 80%;
+	}
+}
+@media (max-width: 568px) {
+	.headerMain {
+		background-size: 100%;
+	}
+}
+@media (max-width: 320px) {
+	.navBlock{
+		flex-direction: column;
 	}
 }

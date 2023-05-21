@@ -4,10 +4,9 @@
 }
 .content {
 	color: rgb(249, 239, 225);
-	padding: 0 0 20px 0;
+	padding: 0 20px 20px 30px;
 }
 .mainGradient {
-	margin-top: -20px;
 	position: absolute;
 	height: 300px;
 	width: 100%;

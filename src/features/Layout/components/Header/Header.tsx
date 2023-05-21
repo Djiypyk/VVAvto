@@ -12,8 +12,8 @@ export const Header = () => {
 					alt='Номер телефона для связи с автомастерской'
 				/>
 				<div className={styles.headerContact}>
-					<span>+375 (29) 694-16-03</span>
-					<span>+375 (29) 663-24-28</span>
+					<a href='callto:+375296941603'>+375 (29) 694-16-03</a>
+					<a href='callto:+375296632428'>+375 (29) 694-16-03</a>
 				</div>
 			</div>
 		</div>

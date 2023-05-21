@@ -16,6 +16,13 @@
 	display: flex;
 	flex-direction: column;
 }
+.headerContact a {
+	color: antiquewhite;
+	transition: 0.3s ease-in-out;
+}
+.headerContact a:hover {
+	color: gold;
+}
 .phoneSvg {
 	height: 36px;
 	width: 36px;

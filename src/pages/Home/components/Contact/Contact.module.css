@@ -7,17 +7,7 @@
 	display: flex;
 	align-items: start;
 	margin-top: 60px;
-	padding: 0 20px;
-}
-
-@media (max-width: 768px) {
-	.mapBlock {
-        margin-top: 20px;
-		flex-direction: column;
-	}
-	.contactInfo {
-		margin-bottom: 36px;
-	}
+	/* padding: 0 20px; */
 }
 
 .contactInfo {
@@ -34,8 +24,34 @@
 	margin-bottom: 6px;
 }
 
+.contactInfoEach a {
+	color: black;
+	transition: 0.2s ease-in-out;
+}
+.contactInfoEach a:hover {
+	color: gold;
+}
 .map {
 	width: 100%;
-	height: 400px;
+	height: 300px;
 	border: 1px solid black;
+}
+
+@media (max-width: 1068px) {
+	.mapBlock {
+		flex-direction: column;
+	}
+	.contactInfo {
+		margin-bottom: 36px;
+	}
+}
+
+@media (max-width: 768px) {
+	.mapBlock {
+		margin-top: 20px;
+		flex-direction: column;
+	}
+	.contactInfo {
+		margin-bottom: 36px;
+	}
 }

@@ -46,9 +46,9 @@ export const HeaderMain = () => {
 					О компании
 				</NavLink>
 			</nav>
-			<div className={styles.homeSlider}>
+			{/* <div className={styles.homeSlider}>
 				<Slider images={images} />
-			</div>
+			</div> */}
 		</div>
 	)
 }

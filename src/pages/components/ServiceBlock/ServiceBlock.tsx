@@ -28,7 +28,7 @@ export const ServiceBlock = () => {
 	return (
 		<div className={styles.serviceBlock}>
 			{servicesList.map((item) => (
-				<Services title={item.title} image={item.image} />
+				<Services key={item.title} title={item.title} image={item.image} />
 			))}
 		</div>
 	)

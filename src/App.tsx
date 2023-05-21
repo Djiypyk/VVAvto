@@ -19,7 +19,7 @@ const App = () => {
 				{
 					path: '/',
 					element: <Home />,
-					// index: true,
+					index: true,
 				},
 				{
 					path: PATH.SERVICES,
@@ -27,11 +27,11 @@ const App = () => {
 				},
 				{
 					path: PATH.CONTACT,
-					element: <Layout />,
+					element: <h1>Контакты</h1>,
 				},
 				{
 					path: PATH.ABOUT_COMPANY,
-					element: <Layout />,
+					element: <h1>О компании</h1>,
 				},
 			],
 		},

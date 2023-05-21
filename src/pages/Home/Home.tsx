@@ -1,4 +1,5 @@
 import { Contact } from './components'
+
 import styles from './Home.module.css'
 
 import { ServiceBlock } from '../components'
