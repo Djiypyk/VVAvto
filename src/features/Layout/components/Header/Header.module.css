@@ -8,6 +8,16 @@
 	color: antiquewhite;
 	border-bottom: 1px solid antiquewhite;
 }
+.headerWrapperTitleBlock{
+	display: flex;
+	align-items: center;
+}
+.headerWrapperTitleBlock h1 {
+	display: none;
+}
+.logo{
+	width: 160px;
+}
 .phoneContainer {
 	display: flex;
 	align-items: center;

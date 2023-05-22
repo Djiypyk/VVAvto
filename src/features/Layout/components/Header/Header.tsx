@@ -1,10 +1,19 @@
 import styles from './Header.module.css'
 import PhoneSvg from '../../../../assets/svg/phone.svg'
+import Logo from '../../../../assets/img/logo.png'
 
 export const Header = () => {
 	return (
-		<div className={styles.headerWrapper}>
-			<span>ВВ-Авто</span>
+		<header className={styles.headerWrapper}>
+			<div className={styles.headerWrapperTitleBlock}>
+				<h1>ВВ-Авто</h1>
+				<img
+					className={styles.logo}
+					src={Logo}
+					alt='Логотип и переход на главную страницу'
+				/>
+			</div>
+
 			<div className={styles.phoneContainer}>
 				<img
 					className={styles.phoneSvg}
@@ -12,10 +21,10 @@ export const Header = () => {
 					alt='Номер телефона для связи с автомастерской'
 				/>
 				<div className={styles.headerContact}>
-					<a href='callto:+375296941603'>+375 (29) 694-16-03</a>
-					<a href='callto:+375296632428'>+375 (29) 694-16-03</a>
+					<a href='tel:+375296941603'>+375 (29) 694-16-03</a>
+					<a href='tel:+375296632428'>+375 (29) 694-16-03</a>
 				</div>
 			</div>
-		</div>
+		</header>
 	)
 }
